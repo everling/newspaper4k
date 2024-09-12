@@ -69,7 +69,7 @@ class OutputFormatter:
         # removes some same level tags that might
         # contain non-content like menus, gallery,  etc.
         # this can misfire on some sites
-        self._remove_trailing_media_div(node_cleaned)
+        # self._remove_trailing_media_div(node_cleaned)
 
         if self.config.clean_article_html:
             html = self._create_clean_html(node_cleaned)
